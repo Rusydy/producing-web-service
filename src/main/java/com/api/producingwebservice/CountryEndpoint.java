@@ -21,7 +21,6 @@ public class CountryEndpoint {
     }
 
     @PayloadRoot(namespace = NAME_SPACE_URI, localPart = "getCountryRequest")
-
     @ResponsePayload
     public GetCountryResponse getCountry(@RequestPayload GetCountryRequest request) {
         GetCountryResponse response = new GetCountryResponse();
